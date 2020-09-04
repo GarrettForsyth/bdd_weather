@@ -4,8 +4,7 @@ dist: bionic
 
 branches:
   only:
-    - development
-    - production
+    - master
 
 env:
   global:
