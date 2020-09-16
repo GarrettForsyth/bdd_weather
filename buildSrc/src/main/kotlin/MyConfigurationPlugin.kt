@@ -26,9 +26,10 @@ class MyConfigurationPlugin : Plugin<Project> {
                     val extension = project.extensions.getByType(
                         AppExtension::class.java)
                     extension.configureCommon()
-                    extension.configureLibrary(project)
+                    extension.configureLibrary()
                 }
             }
+            project.commonTasks()
         }
     }
 }

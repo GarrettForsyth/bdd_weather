@@ -9,4 +9,6 @@ object Versions {
     const val junit4 = "4.12"
     const val axJunit4 = "1.1.2"
     const val axEspresso = "3.3.0"
+    const val assertK = "0.23"
+    const val mockWebServer = "4.9.0"
 }

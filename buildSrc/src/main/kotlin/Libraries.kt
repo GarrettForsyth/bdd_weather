@@ -20,6 +20,8 @@ object Libraries {
         }
         object Common {
             const val axJunit4 = "androidx.test.ext:junit:${Versions.axJunit4}"
+            const val assertK = "com.willowtreeapps.assertk:assertk-jvm:${Versions.assertK}"
+            const val mockWebServer = "com.squareup.okhttp3:mockwebserver:${Versions.mockWebServer}"
         }
     }
 }

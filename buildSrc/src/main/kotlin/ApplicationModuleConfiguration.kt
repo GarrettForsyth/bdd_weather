@@ -5,7 +5,7 @@ import org.gradle.kotlin.dsl.getByName
 /**
  * Configuration for the application module.
  */
-fun AppExtension.configureLibrary(project: Project) {
+fun AppExtension.configureLibrary() {
     defaultConfig.apply {
         applicationId(ProjectConfiguration.applicationId)
         buildToolsVersion(ProjectConfiguration.buildToolsVersion)
