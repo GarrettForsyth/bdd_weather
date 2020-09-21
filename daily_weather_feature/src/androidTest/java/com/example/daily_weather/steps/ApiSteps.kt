@@ -7,7 +7,7 @@ object ApiSteps {
 
     fun it_is_expected_to_rain_within_twelve_hours() {
         val mockWebServer = MockWebServer()
-        mockWebServer.enqueueResponseFromFile("onecall_rain_response.json", this::class.java)
+        mockWebServer.enqueueResponseFromFile("api_responses/onecall_rain_response.json", this::class.java)
     }
 
 }

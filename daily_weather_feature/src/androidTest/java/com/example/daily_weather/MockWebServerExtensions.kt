@@ -1,5 +1,6 @@
 package com.example.daily_weather
 
+import androidx.test.platform.app.InstrumentationRegistry
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
 

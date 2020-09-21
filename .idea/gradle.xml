@@ -15,7 +15,7 @@
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/core_android_test" />
             <option value="$PROJECT_DIR$/core_test" />
-            <option value="$PROJECT_DIR$/daily_weather" />
+            <option value="$PROJECT_DIR$/daily_weather_feature" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

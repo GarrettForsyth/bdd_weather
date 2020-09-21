@@ -1,3 +1,4 @@
+android.defaultConfig.targetSdk = ProjectConfiguration.targetSdkVersion
 dependencies {
     implementation(project(":app"))
     testImplementation(project(":core_test"))

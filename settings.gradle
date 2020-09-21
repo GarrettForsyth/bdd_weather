@@ -1,5 +1,5 @@
 rootProject.name = "BDD Weather"
 include ':app'
-include ':daily_weather'
+include ':daily_weather_feature'
 include ':core_test'
 include ':core_android_test'

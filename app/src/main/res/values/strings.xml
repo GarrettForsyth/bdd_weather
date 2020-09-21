@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BDD Weather</string>
+    <string name="rain">Rain</string>
 </resources>

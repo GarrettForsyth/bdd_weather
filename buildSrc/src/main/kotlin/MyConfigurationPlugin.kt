@@ -1,7 +1,6 @@
-import com.android.build.gradle.AppExtension
-import com.android.build.gradle.AppPlugin
-import com.android.build.gradle.LibraryExtension
-import com.android.build.gradle.LibraryPlugin
+import com.android.build.api.dsl.DynamicFeatureExtension
+import com.android.build.gradle.*
+import com.android.build.gradle.internal.plugins.DynamicFeaturePlugin
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
@@ -21,6 +20,12 @@ class MyConfigurationPlugin : Plugin<Project> {
                         LibraryExtension::class.java
                     )
                     extension.configureCommon()
+                }
+                is DynamicFeaturePlugin -> {
+                    val extension = project.extensions.getByType(
+                        DynamicFeatureExtension::class.java
+                    )
+                    extension.configure()
                 }
                 is AppPlugin -> {
                     val extension = project.extensions.getByType(

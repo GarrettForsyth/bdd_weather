@@ -20,6 +20,17 @@ class Result<R>(private val result: () -> R) {
             assertions.assert(result())
         }
     }
+
+    fun <T> thenCheck(subject: T, assert: Assert<T>.() -> Unit) {
+        assertThat(subject).assert()
+    }
+
+    fun <T> check(subject: T, assert: Assertions.(T) -> Unit) {
+        val assertions = Assertions()
+        assertAll {
+            assertions.assert(subject)
+        }
+    }
 }
 
 class Assertions {
