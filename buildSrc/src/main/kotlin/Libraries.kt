@@ -1,6 +1,6 @@
 object Libraries {
     object Kotlin {
-        const val stdLib = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}"
+        const val stdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
     }
     object Compatibility {
         const val coreKtx = "androidx.core:core-ktx:${Versions.coreKtx}" // Kotlin extension to common libraries of the Android Framework

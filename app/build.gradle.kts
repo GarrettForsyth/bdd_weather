@@ -3,6 +3,7 @@ dependencies {
     testImplementation(project(":core_test"))
 
     implementation(Libraries.Kotlin.stdLib)
+
     implementation(Libraries.Compatibility.playCore)
     implementation(Libraries.Compatibility.playCoreKtx)
 

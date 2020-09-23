@@ -25,13 +25,13 @@ class MyConfigurationPlugin : Plugin<Project> {
                     val extension = project.extensions.getByType(
                         DynamicFeatureExtension::class.java
                     )
-                    extension.configure()
+                     (extension as BaseExtension).configureCommon()
                 }
                 is AppPlugin -> {
                     val extension = project.extensions.getByType(
                         AppExtension::class.java)
                     extension.configureCommon()
-                    extension.configureLibrary()
+                    extension.configureApplication()
                 }
             }
             project.commonTasks()
