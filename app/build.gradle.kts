@@ -8,7 +8,21 @@ dependencies {
     implementation(Libraries.Compatibility.playCoreKtx)
 
     api(Libraries.Compatibility.appCompat)
-    implementation(Libraries.Compatibility.coreKtx)
-    implementation(Libraries.UI.material)
-    implementation(Libraries.UI.constraintLayout)
+    api(Libraries.Compatibility.coreKtx)
+    api(Libraries.UI.material)
+    api(Libraries.UI.constraintLayout)
+    api(Libraries.Compatibility.navKtx)
+    api(Libraries.Compatibility.navFeatureSupport)
+    api(Libraries.UI.constraintLayout)
+
+    api(Libraries.LifeCycle.viewmodel)
+    api(Libraries.LifeCycle.livedata)
+    api(Libraries.LifeCycle.lifecycles)
+    api(Libraries.LifeCycle.saveState)
+    api(Libraries.LifeCycle.compiler)
+
+    // https://issuetracker.google.com/issues/128612536
+    debugApi(Libraries.Test.Feature.fragment) {
+        exclude(group = "androidx.test", module = "core")
+    }
 }
