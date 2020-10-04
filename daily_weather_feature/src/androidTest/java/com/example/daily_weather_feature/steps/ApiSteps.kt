@@ -1,6 +1,6 @@
-package com.example.daily_weather.steps
+package com.example.daily_weather_feature.steps
 
-import com.example.daily_weather.enqueueResponseFromFile
+import com.example.daily_weather_feature.enqueueResponseFromFile
 import okhttp3.mockwebserver.MockWebServer
 
 object ApiSteps {

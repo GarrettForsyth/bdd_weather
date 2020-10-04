@@ -1,4 +1,4 @@
-package com.example.daily_weather
+package com.example.daily_weather_feature
 
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
@@ -6,10 +6,10 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.bddweather.MainActivity
 import com.example.core_android_test.given
-import com.example.daily_weather.steps.ApiSteps.it_is_expected_to_rain_within_twelve_hours
+import com.example.daily_weather_feature.steps.ApiSteps.it_is_expected_to_rain_within_twelve_hours
 import org.hamcrest.Matchers.allOf
 import com.example.core_android_test.haveStateThat
-import com.example.daily_weather.steps.ApiSteps.it_is_not_expected_to_rain_within_twelve_hours
+import com.example.daily_weather_feature.steps.ApiSteps.it_is_not_expected_to_rain_within_twelve_hours
 import org.hamcrest.Matchers.not
 import org.junit.Rule
 import org.junit.Test

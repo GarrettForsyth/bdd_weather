@@ -7,4 +7,6 @@ dependencies {
     api(Libraries.Test.Unit.spek)
     api(Libraries.Test.Unit.spekRunner)
     api(Libraries.Test.Unit.arch)
+    api(Libraries.Room.test)
+    api(Libraries.Test.Unit.coroutineTest)
 }

@@ -1,6 +1,5 @@
-package com.example.daily_weather
+package com.example.daily_weather_feature
 
-import androidx.test.platform.app.InstrumentationRegistry
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
 

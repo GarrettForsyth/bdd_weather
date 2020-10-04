@@ -5,12 +5,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.bddweather.api.WeatherApiService
+import com.example.bddweather.data.WeatherDao
 import com.example.daily_weather.R
 import com.example.daily_weather_feature.repo.DailyWeatherRepository
 
 class DailyWeatherFragment : Fragment() {
 
-    private val dailyWeatherRepository = DailyWeatherRepository()
+    private val dailyWeatherRepository = DailyWeatherRepository(
+        WeatherDao(), WeatherApiService()
+    )
     var viewmodel = DailyWeatherViewModel(dailyWeatherRepository)
 
     override fun onCreate(savedInstanceState: Bundle?) {

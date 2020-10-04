@@ -1,4 +1,4 @@
-package com.example.daily_weather.fragments
+package com.example.daily_weather_feature.fragments
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
@@ -9,7 +9,7 @@ import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.example.daily_weather.R
+import com.example.daily_weather_feature.R
 import com.example.daily_weather_feature.ui.DailyWeatherFragment
 import io.mockk.mockk
 import io.mockk.verify

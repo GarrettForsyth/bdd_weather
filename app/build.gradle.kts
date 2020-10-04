@@ -21,6 +21,11 @@ dependencies {
     api(Libraries.LifeCycle.saveState)
     api(Libraries.LifeCycle.compiler)
 
+    api(Libraries.Network.retrofit)
+
+    api(Libraries.Room.room)
+    api(Libraries.Room.ktx)
+
     // https://issuetracker.google.com/issues/128612536
     debugApi(Libraries.Test.Feature.fragment) {
         exclude(group = "androidx.test", module = "core")

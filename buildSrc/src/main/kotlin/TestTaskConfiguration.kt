@@ -16,9 +16,11 @@ fun Test.configureTests() {
         ignoreFailures = true
     }
 
+
     addTestListener(object : TestListener {
+
         override fun afterSuite(suite: TestDescriptor?, result: TestResult?) {
-            displayResults(suite, result)
+            //displayResults(suite, result)
         }
 
         override fun beforeTest(testDescriptor: TestDescriptor?) {}
@@ -45,6 +47,7 @@ private fun displayResults(
     result: TestResult?
 ) {
     if (suite?.parent == null) { // will match the outermost suite
+
         val output =
             "Results: ${result?.resultType} (${result?.testCount} tests, ${result?.successfulTestCount} passed, ${result?.failedTestCount} failed, ${result?.skippedTestCount} skipped)"
         val startItem = "|  "

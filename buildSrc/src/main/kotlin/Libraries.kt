@@ -25,6 +25,17 @@ object Libraries {
         const val compiler = "androidx.lifecycle:lifecycle-common-java8:${Versions.lifecycle}"
     }
 
+    object Room {
+        const val room = "androidx.room:room-runtime:${Versions.room}"
+        const val compiler = "androidx.room:room-compiler:${Versions.room}"
+        const val ktx = "androidx.room:room-ktx:${Versions.room}" // Extensions and coroutine support
+        const val test = "androidx.room:room-testing:${Versions.room}"
+    }
+
+    object Network {
+        const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+    }
+
     object Test {
         object Unit {
             const val junit5 = "org.junit.jupiter:junit-jupiter-api:${Versions.junit5}" // Unit Testing Framework
@@ -32,6 +43,7 @@ object Libraries {
             const val spek = "org.spekframework.spek2:spek-dsl-jvm:${Versions.spek}"
             const val spekRunner = "org.spekframework.spek2:spek-runner-junit5:${Versions.spek}"
             const val arch = "androidx.arch.core:core-testing:${Versions.arch}"
+            const val coroutineTest =  "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutineTest}"
         }
         object Feature {
             const val axEspresso = "androidx.test.espresso:espresso-core:${Versions.axEspresso}" // UI test framework
